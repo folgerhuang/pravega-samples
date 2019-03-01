@@ -25,6 +25,8 @@ ext {
 }
 
 dependencies {
+    runtime files ('lib/pravega-keycloak-credentials-shadow.jar')
+
     testCompile "junit:junit:${junitVersion}"
 
     compile "io.pravega:pravega-client:${pravegaVersion}",
