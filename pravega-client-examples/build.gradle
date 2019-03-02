@@ -25,7 +25,7 @@ ext {
 }
 
 dependencies {
-    runtime files ('lib/pravega-keycloak-credentials-shadow.jar')
+    compileOnly "org.projectlombok:lombok:1.18.2"
 
     testCompile "junit:junit:${junitVersion}"
 
@@ -35,6 +35,8 @@ dependencies {
 
     compile "org.slf4j:slf4j-api:1.7.14"
     compile "ch.qos.logback:logback-classic:1.1.7"
+
+    compile files ('lib/pravega-keycloak-credentials-shadow.jar')
 }
 
 // Build examples
